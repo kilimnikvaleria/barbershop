@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Barbershop Borodinski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <a class="header__logo header__logo--inner">
+        <picture>
+            <source media="(min-width:1200px)" srcset="images/logotype-desktop.svg">
+            <source media="(min-width:768px)" srcset="images/logotype-tablet.svg">
+            <img class="header__logo-image" src="images/logotype-mobile.svg" alt="Barbershop" width="226" height="30">
+        </picture>
+    </a>
+
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">открыть меню</button>
+
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="index.html">главная</a> </li>
+                <li class="main-nav__item main-nav__item--active"><a href="photo.html">наши работы</a> </li>
+                <li class="main-nav__item"><a href="form.html">записаться</a> </li>
+                <li class="main-nav__item"><a href="">контакты</a> </li>
+                <li class="main-nav__item"><a href="">html-академия</a> </li>
+            </ul>
+            <ul class="main-nav__user-items">
+                <li class="main-nav__user-item"><a class="main-nav__user-login" href="#form1">вход</a> </li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+<main class="page-main">
+    <section class="works" >
+        <div class="wrapper works__wrapper">
+            <h2 class="works__title">наши работы</h2>
+            <a class="works__to-main link-button" href="index.html">на главную</a>
+        </div>
+        <article class="works__item works__item--month-best">
+            <div class="works__image-container works__image-container--month-best">
+                <div class="works__best month-best">
+                    <span class="month-best__label">Работа месяца</span>
+                </div>
+                <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="images/photo-1-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-1-tablet.webp">
+                    <source type="image/webp" srcset="images/photo-1-mobile.webp">
+                    <source media="(min-width: 1200px)" srcset="images/photo-1-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="images/photo-1-tablet.jpg">
+                    <img class="works__image" src="images/photo-1-mobile.jpg" alt="">
+                </picture>
+            </div>
+            <div class="works__desc works__desc--month-best">
+                <h2 class="works__name">Лжепётр Мчиславский</h2>
+                <blockquote class="works__comment">
+                    Где я только ни стригся, но так как делаете это
+                    вы &ndash; не умеет никто другой! Еще раз спасибо и до скорого!
+                </blockquote>
+                <ul class="works__service-list">
+                    <li class="works__service-item works__service-item--hair">Стрижка</li>
+                    <li class="works__service-item works__service-item--beard">Бритье</li>
+                    <li class="works__service-item works__service-item--mustache">Усы</li>
+                </ul>
+            </div>
+        </article>
+        <article class="works__item">
+            <div class="works__image-container">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="images/photo-2-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-2-tablet.webp">
+                    <source type="image/webp" srcset="images/photo-2-mobile.webp">
+                    <source media="(min-width: 1200px)" srcset="images/photo-2-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="images/photo-2-tablet.jpg">
+                    <img class="works__image" src="./images/photo-2-mobile.jpg" alt="">
+                </picture>
+            </div>
+            <div class="works__desc">
+                <h2 class="works__name">Саша Мальцев</h2>
+                <blockquote class="works__comment">
+                    Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
+                </blockquote>
+                <ul class="works__service-list">
+                    <li class="works__service-item works__service-item--hair">Стрижка</li>
+                </ul>
+            </div>
+        </article>
+        <article class="works__item">
+            <div class="works__image-container">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="images/photo-3-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-3-tablet.webp">
+                    <source type="image/webp" srcset="images/photo-3-mobile.webp">
+                    <source media="(min-width: 1200px)" srcset="images/photo-3-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="images/photo-3-tablet.jpg">
+                    <img class="works__image" src="./images/photo-3-mobile.jpg" alt="">
+                </picture>
+            </div>
+            <div class="works__desc">
+                <h2 class="works__name">Владимир Иваныч</h2>
+                <blockquote class="works__comment">
+                    К зимнему сезону - готов!
+                </blockquote>
+                <ul class="works__service-list">
+                    <li class="works__service-item works__service-item--beard">Борода</li>
+                    <li class="works__service-item works__service-item--mustache">Усы</li>
+                </ul>
+            </div>
+        </article>
+        <article class="works__item">
+            <div class="works__image-container">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="images/photo-4-desktop.webp">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="images/photo-4-tablet.webp">
+                    <source type="image/webp" srcset="images/photo-4-mobile.webp">
+                    <source media="(min-width: 1200px)" srcset="images/photo-4-desktop.jpg">
+                    <source media="(min-width: 768px)" srcset="images/photo-4-tablet.jpg">
+                    <img class="works__image" src="./images/photo-4-mobile.jpg" alt="">
+                </picture>
+            </div>
+            <div class="works__desc">
+                <h2 class="works__name">Винстон Синий</h2>
+                <blockquote class="works__comment">
+                    Как только зарастаю, и волосы начинают мешать видеть &ndash; бегом в Бородинский!
+                </blockquote>
+                <ul class="works__service-list">
+                    <li class="works__service-item works__service-item--hair">Стрижка</li>
+                </ul>
+            </div>
+        </article>
+
+    </section>
+    <section class="price">
+        <h2 class="visually-hidden">Наши цены</h2>
+        <table class="price__table">
+            <caption class="price__title">Прейскурант</caption>
+            <tr>
+                <td class="price__index">1</td>
+                <td class="price__service">
+                    Классическая стрижка
+                    <span class="price__washing price__washing--mobile">(с мытьём головы)</span>
+                </td>
+                <td class="price__washing">с мытьём головы</td>
+                <td class="price__value">1 500 руб.</td>
+            </tr>
+            <tr>
+                <td class="price__index">2</td>
+                <td class="price__service">
+                    Современный вариант
+                    <span class="price__washing price__washing--mobile">(с мытьём головы)</span>
+                </td>
+                <td class="price__washing">с мытьём головы</td>
+                <td class="price__value">1 500 руб.</td>
+            </tr>
+            <tr>
+                <td class="price__index">3</td>
+                <td class="price__service">
+                    Индивидуальный подход
+                    <span class="price__washing price__washing--mobile">(с мытьём головы)</span>
+                </td>
+                <td class="price__washing">с мытьём головы</td>
+                <td class="price__value">2 000 руб.</td>
+            </tr>
+            <tr>
+                <td class="price__index">4</td>
+                <td class="price__service">
+                    Бритьё бороды
+                    <span class="price__washing price__washing--mobile">(без мытья)</span>
+                </td>
+                <td class="price__washing">без мытья</td>
+                <td class="price__value">500 руб.</td>
+            </tr>
+            <tr>
+                <td class="price__index">5</td>
+                <td class="price__service">
+                    Бритьё головы
+                    <span class="price__washing price__washing--mobile">(с мытьём головы)</span>
+                </td>
+                <td class="price__washing">с мытьём головы</td>
+                <td class="price__value">1 000 руб.</td>
+            </tr>
+        </table>
+        <div class="price__offer discount">
+            <p class="discount__text">C 10:00 до 14:00 скидка 20%</p>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="wrapper footer__wrapper">
+        <div class="footer__contacts contacts">
+            <b class="contacts__title">Барбершоп Бородинский</b>
+            <p class="contacts__address">
+                г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+            </p>
+            <a href="tel:+78125556666" class="contacts__phone link-button">+7 (812) 555-66-66</a>
+        </div>
+        <div class="footer__social social">
+            <span class="social__text">Давайте дружить!</span>
+            <ul class="social__list">
+                <li class="social__item">
+                    <a href="https://vk.com/htmlacademy" class="social__link social__link--vk">Вконтакте</a>
+                </li>
+                <li class="social__item">
+                    <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--fb">Фейсбук</a>
+                </li>
+                <li class="social__item">
+                    <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--ig">Инстаграм</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__copyright copyright">
+            <span>Разработано: </span>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link link-button">HTML Academy</a>
+        </div>
+    </div>
+</footer>
+<a href="#x" class="overlay" id="form1"></a>
+<div class="modal">
+    <h1 class="modal__title">Личный кабинет</h1>
+    <p class="modal__info-text">
+        Введите свой логин и пароль, чтобы войти
+    </p>
+    <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
+        <p class="modal__input-container">
+            <label for="user" class="visually-hidden">Логин</label>
+            <input type="text" class="modal__input input" name="user" id="user" placeholder="Логин" required>
+            <svg class="modal__icon" width="15" height="15"><use xlink:href="img/sprite.svg#user"></use></svg>
+        </p>
+        <p class="modal__input-container">
+            <label for="password" class="visually-hidden">Пароль</label>
+            <input type="text" class="modal__input input" name="password" id="password" placeholder="Пароль" required>
+            <svg class="modal__icon" width="15" height="15"><use xlink:href="img/sprite.svg#lock"></use></svg>
+        </p>
+        <input type="checkbox" class="visually-hidden" name="memorize-me" id="memorize-me">
+        <label class="modal__memorize-me" for="memorize-me">
+            Запомните меня
+            <span class="modal__check-indicator"></span>
+        </label>
+        <a href="#" class="modal__restore">Я забыл пароль!</a>
+        <input type="submit" class="modal__login-button" value="Войти">
+        <a class="modal__close link-button" href="#close">Закрыть</a>
+    </form>
+</div>
+</body>
+<script>
+    var navMain=document.querySelector('.main-nav');
+    var navToggle=document.querySelector('.main-nav__toggle');
+    navMain.classList.remove('main-nav--nojs');
+    navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')){
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+        }
+        else{
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+        }
+    });
+</script>
+</html>

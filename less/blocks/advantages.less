@@ -1,0 +1,223 @@
+.advantages {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 48px;
+  background-color: #242424;
+
+  &::after{
+    .beveled-corners(@beige);
+  }
+}
+
+.advantages input[type=radio] {
+  display: none;
+}
+
+.advantages__items{
+  list-style: none;
+  padding: 0;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.advantages__item li{
+  display: block;
+}
+
+.advantages__item{
+  padding-top: 119px;
+  display: none;
+
+  &--fast{
+    background-image: url("../images/slider-scissors.svg");
+    background-repeat: no-repeat;
+    background-size: 95px 94px;
+    background-position: center top;
+  }
+
+  &--cool{
+    background-image: url("../images/slider-chair.svg");
+    background-repeat: no-repeat;
+    background-size: 95px 94px;
+    background-position: center top;
+  }
+
+  &--expensive{
+    background-image: url("../images/slider-stamp.svg");
+    background-repeat: no-repeat;
+    background-size: 95px 94px;
+    background-position: center top;
+  }
+}
+
+.advantages__item-title{
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.advantages__text{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.advantages__toggles {
+  width: 73px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+}
+
+.advantages__toggles label {
+  cursor: pointer;
+  width: 7px;
+  height: 7px;
+  padding: 0;
+
+  background: none;
+  border: 1px solid #ffffff;
+  transform: rotate(45deg);
+
+}
+
+#advantages-input-1:checked ~ .advantages__toggles label[for="advantages-input-1"],
+#advantages-input-2:checked ~ .advantages__toggles label[for="advantages-input-2"],
+#advantages-input-3:checked ~ .advantages__toggles label[for="advantages-input-3"] {
+  background-color: @white;
+}
+
+#advantages-input-1:checked ~ .advantages__items .advantages__item  {
+  &:nth-child(1){
+    display: block;
+  }
+}
+
+#advantages-input-2:checked ~ .advantages__items .advantages__item {
+  &:nth-child(2){
+    display: block;
+  }
+}
+
+#advantages-input-3:checked ~ .advantages__items .advantages__item {
+  &:nth-child(3){
+    display: block;
+  }
+}
+
+@media @tablet-widths {
+  .advantages {
+    padding-top: 2px;
+    padding-bottom: 50px;
+    background: none;
+    &::after {
+      height: 40px;
+      bottom: 0;
+    }
+  }
+  .advantages__items{
+    //max-width: 640px;
+    max-width: 70%;
+    padding-left: 36px;
+    padding-right: 34px;
+  }
+
+  .advantages__item {
+    display: block;
+    padding-top: 35px;
+    padding-left: 124px;
+    padding-bottom: 37px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:last-child{
+      border-bottom: none;
+    }
+
+    &--fast {
+      background-position: left top 44px;
+    }
+
+    &--cool {
+      background-position: left top 46px;
+    }
+
+    &--expensive {
+      background-position: left top 43px;
+    }
+  }
+  .advantages__item-title {
+    margin-bottom: 7px;
+    text-align: left;
+    line-height: 42px;
+  }
+
+  .advantages__text {
+    margin: 0;
+    padding: 0;
+
+    text-align: left;
+  }
+
+  .advantages__toggles {
+    display: none;
+  }
+}
+
+@media @desktop-widths {
+  .advantages {
+    padding-top: 80px;
+    padding-bottom: 67px;
+    &::after {
+      height: 65px;
+    }
+  }
+
+  .advantages__items{
+    display: flex;
+    padding: 0;
+    max-width: 960px;
+  }
+
+  .advantages__item {
+    width: 320px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 119px;
+    box-sizing: border-box;
+    border-bottom: none;
+
+    &:nth-child(2) {
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    &--fast {
+      background-position: center top;
+    }
+
+    &--cool {
+      background-position: center top;
+    }
+
+    &--expensive {
+      background-position: center top;
+    }
+  }
+
+  .advantages__item-title {
+    text-align: center;
+  }
+
+  .advantages__text {
+    text-align: center;
+  }
+
+}
+    
+    
